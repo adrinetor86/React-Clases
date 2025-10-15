@@ -11,12 +11,21 @@ class HijoDeportes extends Component {
             }
         )
     }
+
+    seleccionarFavorito=()=>{
+        //CAPTURAMOS EL DEPORTE DEL PROPIO COMPONENT EN PROPS
+        var deporte = this.props.deporte
+
+        this.props.mostrarFavorito(deporte)
+    }
+
     render(){
         return (
             <div>
                 <h5 style={{color:"blue"}}>Deporte: {this.props.deporte}</h5>
-                <h2 style={{color:"green"}}>Su deporte favorito es: {this.state.favorito}</h2>
-                <button onClick={this.mostrarFavorito}>Seleccionar Favorito</button>
+                <button onClick={this.seleccionarFavorito}>Seleccionar favorito</button>
+                {/*<h2 style={{color:"green"}}>Su deporte favorito es: {this.state.favorito}</h2>*/}
+                {/*<button onClick={this.mostrarFavorito}>Seleccionar Favorito</button>*/}
             </div>
         )
     }

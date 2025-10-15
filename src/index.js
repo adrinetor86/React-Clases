@@ -7,6 +7,8 @@ import Contador from "./components/contador/Contador";
 import DibujosComplejos from "./components/dibujoscomplejos/DibujosComplejos";
 import DibujoComplejoRender from "./components/DibujoComplejoRender";
 import PadreDeportes from "./components/PadreDeportes";
+import PadreNumeros from "./components/PadreNumeros";
+import Comics from "./components/Comics";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +18,9 @@ root.render(
         {/*<Contador inicio="9" />*/}
         {/*<DibujosComplejos/>*/}
         {/*<DibujoComplejoRender/>*/}
-        <PadreDeportes/>
+        {/*<PadreDeportes/>*/}
+        {/*<PadreNumeros/>*/}
+        <Comics/>
     </React.StrictMode>
 );
 
